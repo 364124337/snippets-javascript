@@ -1,6 +1,6 @@
 Function.prototype.myApply = function(context = globalThis) {
     const key = Symbol("key")
-    context[key] = this
+    context[key] = this 
     let res
     if (arguments[1]) {
         res = context[key](...arguments[1])
