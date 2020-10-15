@@ -31,6 +31,6 @@ function limit(count, array, iterateFunc) {
 // test
 const timeout = (i) =>
   new Promise((resolve) => setTimeout(() => resolve(i), i));
-limit(2, [1000, 1000, 1000, 1000], timeout).then((res) => {
+limit(2, [1000, 1001, 1002, 1003], timeout).then((res) => {
   console.log(res);
 });
